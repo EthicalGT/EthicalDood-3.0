@@ -1,0 +1,184 @@
+ASSIGNMENT 1
+SET-A
+Q.1 Write a java Program to check whether given number is Prime or Not.
+Ans:
+import java.util.Scanner;
+class CheckPrime{
+public static void main(String []para)
+{
+Scanner scan=new Scanner(System.in);
+ System.out.println("Enter the Number :");
+ int num=scan.nextInt();
+ if(num>1){
+ if(num%2!=0){
+ System.out.print("Given number is Prime.");
+ }
+ else{
+ System.out.print("Given number is not Prime.");
+ }
+ }
+}
+}
+Output:
+ASSIGNMENT 1
+SET-A
+Q.2 Write a java Program to display all the perfect numbers between 1 to n.
+Ans:
+class Q2{
+public static void main(String []para)
+{
+int n=100;
+ for(int i=1;i<=n;i++){
+ int sum=0;
+ for(int j=1;j<i;j++){
+ if(i%j==0){
+ sum+=j;
+ }
+ }
+ if(sum==i){
+ System.out.println(i);
+ }
+} }
+}
+Output:
+ASSIGNMENT 1
+SET-A
+Q.3 Write a java Program to accept employee name from a user and display it in reverse order.
+Ans:
+import java.util.*;
+class Q3{
+public static void main(String[] para)
+ASSIGNMENT 1
+SET-C
+Q.1 Write a java program to count the frequency of each character in a given string.
+Ans:
+public class Q1
+{
+ public static void main(String[] args) {
+ String str = "Jay Mahakal";
+ int[] freq = new int[str.length()];
+ int i, j;
+
+ char string[] = str.toCharArray();
+
+ for(i = 0; i <str.length(); i++) {
+ freq[i] = 1;
+ for(j = i+1; j <str.length(); j++) {
+ if(string[i] == string[j]) {
+ freq[i]++;
+ string[j] = '0';
+ }
+ }
+ }
+
+ System.out.println("Characters and their corresponding frequencies");
+ for(i = 0; i <freq.length; i++) {
+ if(string[i] != ' ' && string[i] != '0')
+ System.out.println(string[i] + "-" + freq[i]);
+ }
+ }
+}
+Output:
+ASSIGNMENT 1
+SET-C
+Q.2 Write a java program to display each word in reverse order from a string array.
+Ans:
+class Q2{
+public static void main(String[] args) {
+String str;
+String revstr="";
+char ch;
+str=new String("I am GT");
+for(int i=0;i<str.length();i++){
+ch=str.charAt(i);
+revstr=ch+revstr;
+}
+System.out.println("Original String is :"+str);
+System.out.println("Reversed String is :"+revstr);
+}
+}
+Output:
+ASSIGNMENT 1
+SET-C
+Q.3 Write a java program for union of two integer array.
+Ans:
+class Q3{
+public static void main(String[] args) {
+int[] arr= {1,3,5,8};
+int[] arr2={2,4,6,7};
+int x=arr.length;
+int y=arr2.length;
+System.out.println("Union of arr and arr2 is : ");
+union(arr,arr2,x,y);
+}
+public static void union(int[] arr,int[] arr2,int x,int y){
+int i=0,j=0;
+while(i<x && j<y){
+if(arr[i]<arr2[j]){
+System.out.println(arr[i++]+" ");
+}
+else if(arr[i]>arr2[j]){
+System.out.println(arr2[j++]+" ");
+}
+else{
+System.out.println(arr[i++]+" ");
+j++;
+}
+}
+while(i<x){
+System.out.println(arr[i++]+" ");
+}
+while(j<y){
+System.out.println(arr2[j++]+" ");
+}
+}
+}
+Output:
+ASSIGNMENT 1
+SET-C
+Q.4 Write a java program to display transpose of given matrix.
+Ans:
+class Q4{
+public static void main(String args[]){
+int original[][]={{1,3,4},{2,4,3},{3,4,5}};
+int transpose[][]=new int[3][3]; //3 rows and 3 columns
+
+for(int i=0;i<3;i++){
+for(int j=0;j<3;j++){
+transpose[i][j]=original[j][i];
+}
+}
+
+System.out.println("Original Matrix:");
+for(int i=0;i<3;i++){
+for(int j=0;j<3;j++){
+System.out.print(original[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println("Matrix After Transpose:");
+for(int i=0;i<3;i++){
+for(int j=0;j<3;j++){
+System.out.print(transpose[i][j]+" ");
+}
+System.out.println();
+}
+}}
+Output:
+ASSIGNMENT 1
+SET-C
+Q.5 Write a java program to display alternate character from a given string.
+Ans:
+import java.util.Scanner;
+class Q5{
+ public static void main(String args[]){
+ Scanner scan=new Scanner(System.in);
+
+ try {
+ System.out.print("Enter String : ");
+ String str = scan.nextLine();
+ for(int i=0;i<str.length();i+=2) {
+ System.out.print(" " + str.charAt(i));
+ }
+ } catch (Exception e) {}
+ }

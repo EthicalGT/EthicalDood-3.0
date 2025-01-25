@@ -1,0 +1,12 @@
+try{
+                File file=new File("demo.pdf");
+                if(file.exists()){
+                    if(Desktop.isDesktopSupported()){
+                        Desktop.getDesktop().open(file);
+                    }else{
+                        System.out.println("not supported");
+                    }
+                }
+            }catch(Exception e1){
+                System.out.println(e);
+            }

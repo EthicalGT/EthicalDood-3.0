@@ -1,0 +1,2 @@
+1. javac -cp .;../../lib/connector.jar html.java
+2. java -cp .;../../lib/connector.jar html
