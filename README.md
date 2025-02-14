@@ -29,7 +29,7 @@
 - **MySQL (for database storage)**
 - **MySQL Connector JAR (for database interaction)**
 - **ProcessBuilder (for optimized execution and memory management)**
-- 
+
 ## Usage
 1. **Launch the application** and navigate through the features.
 2. **Explore Programming Content:** Learn from an expanded set of programming languages.
